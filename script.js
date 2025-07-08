@@ -1,262 +1,277 @@
-const vidoeData = [
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
+const sidebarLinks = [
+  {
+    icon: "./sidebar-icon/home.svg",
+    alt: "Home",
+    label: "Home",
+  },
+  {
+    icon: "./sidebar-icon/explore.svg",
+    alt: "Explore",
+    label: "Explore",
+  },
+  {
+    icon: "./sidebar-icon/subscriptions.svg",
+    alt: "Subscriptions",
+    label: "Subscriptions",
+  },
+  {
+    icon: "./sidebar-icon/originals.svg",
+    alt: "Originals",
+    label: "Originals",
+  },
+  {
+    icon: "./sidebar-icon/youtube-music.svg",
+    alt: "YouTube Music",
+    label: "YouTube Music",
+  },
+  {
+    icon: "./sidebar-icon/library.svg",
+    alt: "Library",
+    label: "Library",
+  },
+];
 
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
+let sidebarHtml = "";
+sidebarLinks.forEach((sidebar) => {
+  sidebarHtml += `
+   <div class="sidebar-link">
+      <img src="${sidebar.icon}" alt="${sidebar.alt}" />
+        <div>${sidebar.label}</div>
+      </div>
+    `;
+});
+document.querySelector(".sidebar").innerHTML = sidebarHtml;
 
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-    {
-        thumbnailImg: "images of thumbnail/thumbnail-1.webp",
-        videoTime: "14:20",
-        profilePicture: "chanel of pictures/channel-1.jpeg",
-        videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
-        videoAuthor: "Marques Brownlee",
-        videoStats: "3.4M views · 6 months ago",
-
-    },
-]
-
+const videoData = [
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+  {
+    thumbnailImg: "images of thumbnail/thumbnail-1.webp",
+    videoTime: "14:20",
+    profilePicture: "chanel of pictures/channel-1.jpeg",
+    videoTitle: "Talking Tech and AI with Google CEO Sundar Pichai!",
+    videoAuthor: "Marques Brownlee",
+    videoStats: "3.4M views · 6 months ago",
+  },
+];
 let jsHTML = "";
 
-vidoeData.forEach((video) => {
-    jsHTML += `
+videoData.forEach((video) => {
+  jsHTML += `
      <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="${video.thumbnailImg}" />
@@ -279,7 +294,7 @@ vidoeData.forEach((video) => {
           </div>
         </div>
       </div>
-    `
+    `;
 });
 
-document.querySelector(".video-grid").innerHTML = jsHTML
+document.querySelector(".video-grid").innerHTML = jsHTML;
